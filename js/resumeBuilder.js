@@ -75,7 +75,8 @@ var projects = {
         "title": "MyPortafolio",
         "dates": "2015",
         "description": "This was my first project for Udacity Nanodegree as a Frontend Web developer. HTML, CSS and Bootstrap",
-        "images": "images/portafolio.png"
+        "images": "images/portafolio.png",
+        "url": "https://github.com/cmchest/Portafolio"
     }, {
 
         "title": "Arcade Game",
@@ -201,6 +202,7 @@ projects.display = function() {
         $("#projects").append(HTMLprojectStart);
 
         var formattedprojectTitle = HTMLprojectTitle.replace("%data%", projects.project[project].title);
+        formattedprojectTitle = formattedprojectTitle.replace("%url%", projects.project[project].url);
         $(".project-entry:last").append(formattedprojectTitle);
         var formattedprojectDates = HTMLprojectDates.replace("%data%", projects.project[project].dates);
         $(".project-entry:last").append(formattedprojectDates);
