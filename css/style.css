@@ -117,7 +117,7 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #FF0000;
+  background-color: #9b111e;
   margin-top: 2%;
   color: #fff3f4;
   margin-bottom: 0px;
@@ -179,7 +179,6 @@ span {
 }
 
 #name { 
-  font-family: 'Mrs Sheppards', cursive;
   padding-right: 10px;
 }
 

@@ -9,7 +9,7 @@ var bio = {
         "github": "cmchest",
         "location": "Mexico"
     },
-    "welcomeMessage": "Hi, I showing you my resume, created with some Javascript, JQuery and Bootstrap...hope you like it",
+    "welcomeMessage": "Hi, let me show you my resume, created with some Javascript, JQuery and Bootstrap...hope you like it",
     "skills": [
         "Entrepreneur", "Decision Making", "Teamwork", "Critical & analytical thinking"
     ],
@@ -34,11 +34,16 @@ var education = {
     "onlineCourses": [{
         "title": "Frontend web devloper Nanodegree",
         "school": "Udacity",
-        "dates": 2015,
+        "dates": "2015",
         "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
     }, {
+    	"tites": "Fundamentals of Computing Specializations",
+    	"school": "Rice University",
+    	"dates": "2015-2016",
+    	"url": "https://www.coursera.org/specializations/fundamentalscomputing2"
+    }, {
         "title": "Introduction to Bootstrap",
-        "school": "Edx, Microsoft",
+        "school": "Microsoft",
         "dates": "2015",
         "url": "https://www.edx.org/course/introduction-bootstrap-tutorial-microsoft-dev203x-0"
     }]
@@ -69,8 +74,19 @@ var projects = {
     "project": [{
         "title": "MyPortafolio",
         "dates": "2015",
-        "description": "This was my first project for Udacity Nanodegree as Frontend Web developer. HTML, CSS and Bootstrap",
+        "description": "This was my first project for Udacity Nanodegree as a Frontend Web developer. HTML, CSS and Bootstrap",
         "images": "images/portafolio.png"
+    }, {
+
+        "title": "Arcade Game",
+        "dates": "2015",
+        "description": "Using JS, I made this clone of an Arcade Game, 'frogger'",
+        "images": "images/arcade.png"
+    },{
+    	"title": "Stop Watch",
+    	"dates": "2015",
+    	"description": "Using phtyon I made this simple game, where you have to stop the game at 0 m.seconds",
+    	"images": "images/stopwatch.png"
     }]
 };
 
@@ -159,11 +175,11 @@ education.display();
 
 
 education.displayOnlineCourses = function() {
-
+	
+	 $(".education-entry:last").append(HTMLonlineClasses);
 
     for (var course = 0; course < education.onlineCourses.length; course++) {
-        $(".education-entry:last").append(HTMLonlineClasses);
-
+       
         var formattedonlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
         $(".education-entry:last").append(formattedonlineTitle);
 
