@@ -37,7 +37,7 @@ var education = {
         "dates": "2015",
         "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
     }, {
-    	"tites": "Fundamentals of Computing Specializations",
+    	"title": "Fundamentals of Computing Specializations",
     	"school": "Rice University",
     	"dates": "2015-2016",
     	"url": "https://www.coursera.org/specializations/fundamentalscomputing2"
@@ -76,18 +76,20 @@ var projects = {
         "dates": "2015",
         "description": "This was my first project for Udacity Nanodegree as a Frontend Web developer. HTML, CSS and Bootstrap",
         "images": "images/portafolio.png",
-        "url": "https://github.com/cmchest/Portafolio"
+        "url": "http://cmchest.github.io/p1-portafolio/"
     }, {
 
         "title": "Arcade Game",
         "dates": "2015",
         "description": "Using JS, I made this clone of an Arcade Game, 'frogger'",
-        "images": "images/arcade.png"
+        "images": "images/arcade.png",
+        "url": "http://cmchest.github.io/arcade-game-Carlos/"
     },{
     	"title": "Stop Watch",
     	"dates": "2015",
-    	"description": "Using phtyon I made this simple game, where you have to stop the game at 0 m.seconds",
-    	"images": "images/stopwatch.png"
+    	"description": "Using phtyon I made this simple game, where you have to stop the timer at 0 milisenconds. Just press play to run the code",
+    	"images": "images/stopwatch.png",
+    	"url": "http://www.codeskulptor.org/#user40_UC9ZXyok2AG2qIU_7.py"
     }]
 };
 
