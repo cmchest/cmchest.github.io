@@ -83,7 +83,7 @@ var projects = {
         "dates": "2015",
         "description": "Using JS, I made this clone of an Arcade Game, 'frogger'",
         "images": "images/arcade.png",
-        "url": "https://github.com/cmchest/Game-clone.index.html"
+        "url": "http://cmchest.github.io/Game-clone/"
     },{
     	"title": "Stop Watch",
     	"dates": "2015",
